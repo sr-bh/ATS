@@ -15,4 +15,7 @@ public class Instructor {
         this.name=name;
         this.expertise=expertise;
     }
+    public Course[] getExpertise(){
+        return this.expertise;
+    }
 }

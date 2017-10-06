@@ -38,7 +38,7 @@ public class DataManager {
                 //we need to use another method to input the association course 
                 //or maybe figure out something else
                 
-                courses[i]=new Course(result[0],result[1],result[2],result[3],result[4]);
+                courses[i]=new Course(result[0],result[1],Integer.parseInt(result[2]),result[3],result[4]);
                 courses[i].printAsString();
             }
         }catch(FileNotFoundException ex){

@@ -11,11 +11,11 @@
 public class Course {
     private String code;
     private String name;
-    private String contactSlots;
+    private int contactSlots;
     private String resourceType;
     private String courseType;
     private String association="";
-    public Course(String code, String name, String contactSlots, String resourceType, String courseType){
+    public Course(String code, String name, int contactSlots, String resourceType, String courseType){
         this.code=code;
         this.name=name;
         this.contactSlots=contactSlots;
@@ -30,5 +30,14 @@ public class Course {
         System.out.println("Course resType: "+this.resourceType);
         System.out.println("Course type: "+this.courseType);
         System.out.println("Course association: "+this.association);
+    }
+    public String getCode(){
+        return this.code;
+    }
+    public int getContactSlots(){
+        return this.contactSlots;
+    }
+    public String getCourseType(){
+        return this.courseType;
     }
 }
