@@ -18,4 +18,7 @@ public class Room {
         this.type=type;
         this.capacity=capacity;
     }
+    public void printAsString(){
+        System.out.println("Resource: "+this.resource+", Type: "+this.type+", Capacity: "+this.capacity);
+    }
 }

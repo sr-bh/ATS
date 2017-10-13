@@ -18,4 +18,13 @@ public class Instructor {
     public Course[] getExpertise(){
         return this.expertise;
     }
+    public void printAsString(){
+        System.out.print("Instructor name: "+this.name+" with expertise in ");
+        for(Course c : this.expertise){
+            if(c!=null)
+                System.out.print(c.getCode() + " ");
+        }
+        System.out.println("");
+            
+    }
 }

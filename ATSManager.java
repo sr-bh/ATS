@@ -25,7 +25,7 @@ public class ATSManager {
 
     
     public static void main(String[] args) {
-        
+        /*
         ATSManager myMgr = new ATSManager();
         
         // create all managers
@@ -42,6 +42,6 @@ public class ATSManager {
         
         // generate timetable
         myMgr.periods = myMgr.logicMgr.generate(myMgr.timeslots,myMgr.courses, myMgr.sections,myMgr.rooms,myMgr.instructors);
-        
+        */
     }
 }

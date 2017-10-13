@@ -14,14 +14,13 @@ public class Course {
     private int contactSlots;
     private String resourceType;
     private String courseType;
-    private String association="";
+    private Course association;
     public Course(String code, String name, int contactSlots, String resourceType, String courseType){
         this.code=code;
         this.name=name;
         this.contactSlots=contactSlots;
         this.resourceType=resourceType;
         this.courseType=courseType;
-        //this.association=association;
     }
     public void printAsString(){
         System.out.println("Course code: "+this.code);
@@ -29,7 +28,9 @@ public class Course {
         System.out.println("Course slots: "+this.contactSlots);
         System.out.println("Course resType: "+this.resourceType);
         System.out.println("Course type: "+this.courseType);
-        System.out.println("Course association: "+this.association);
+        if(this.association!=null)
+            System.out.println("Course association: "+this.association.getCode());
+        System.out.println("=========================================================");
     }
     public String getCode(){
         return this.code;
@@ -39,5 +40,8 @@ public class Course {
     }
     public String getCourseType(){
         return this.courseType;
+    }
+    public void setAssociation(Course association){
+        this.association = association;
     }
 }

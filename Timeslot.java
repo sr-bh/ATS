@@ -20,4 +20,9 @@ public class Timeslot {
         this.startTime=startTime;
         this.endTime=endTime;
     }
+    public void printAsString(){
+        System.out.println("Day Of Week: "+this.day+" Slot Number: "+this.slot);
+        System.out.println("Start time: "+this.startTime+" End Time: "+this.endTime);
+        System.out.println("=========================================================");
+    }
 }
